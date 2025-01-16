@@ -19,6 +19,6 @@ The approach is the following:
 	- the model is trained for 10 epochs, with batch size of 64. This takes a few hours on UBELIX (GPU 4090)
 
 A few notes:
-1- the Q&A set is first generated, and then split in train-test-eval. This is not optimal since this can allow leaking data from train to test, in particular since the same part of the same abstract is used to generate multiple questions. In principle it would be better to first spliot the abstracts, and then generate toe Q&A. This will be done in a second version.
+1-abstracts are spit (train/eval/test) before generating questions, so there should be no data leadking
 2- the quality of the automatically generated Q&A is not huge. For real application, it would be worth creating manually a sub-set of good quality questions (or at least removing the ones that are not good in the automatically generated dataset)
 
