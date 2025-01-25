@@ -19,6 +19,6 @@ The approach is the following:
 	- the model is trained for 10 epochs, with batch size of 64. This takes a few hours on UBELIX (GPU 4090)
 
 A few notes:
-1-abstracts are spit (train/eval/test) before generating questions, so there should be no data leadking
+1-abstracts are split (train/eval/test) before generating questions, so there should be no data leadking
 2- the quality of the automatically generated Q&A is not huge. For real application, it would be worth creating manually a sub-set of good quality questions (or at least removing the ones that are not good in the automatically generated dataset)
 
